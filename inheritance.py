@@ -1,5 +1,8 @@
 class PartyAnimal:
 
+    x = 0
+    name = ""
+
     def __init__(self, nam):
         self.x = 0
         self.name = nam
@@ -12,10 +15,7 @@ class PartyAnimal:
 
 class FootballFan(PartyAnimal):
 
-    def __init__(self, nam):
-        super().__init__(nam)
-        self.points = 0
-
+    points = 0
     def touchdown(self):
         self.points = self.points + 7
         self.party()
